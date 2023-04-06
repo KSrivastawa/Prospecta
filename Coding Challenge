@@ -1,0 +1,14 @@
+Coding Challenge:
+—----------------
+
+3: what are the key things you would consider when creating/consuming an API to ensure that it is secure and reliable?
+Answer:- There are important things to be considered such as:
+
+- Authentication and authorization
+- Input validation
+- Encryption
+- Rate limiting
+- Backups
+- Disaster recovery
+- Documentation
+- Reliability
