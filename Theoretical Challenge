@@ -1,0 +1,19 @@
+Theoretical Challenge
+—---------------------
+
+1. How will you tackle the challenge above?
+
+Answer:- There are several ways to tackle this:
+- Invalid or missing delimiter (comma)
+- Invalid or missing colon separator between name and expression
+- Invalid or missing name or expression
+- Invalid or unsupported mathematical expression syntax 
+- Circular references between cells 
+- Missing or invalid reference to other cells
+
+3. How might a user break your code?
+
+Answer: There are different ways:
+- Providing invalid or unexpected CSV input data 
+- Providing CSV input data with circular references or missing cell dependencies
+- Attempting to modify or delete the input or output files during program execution
