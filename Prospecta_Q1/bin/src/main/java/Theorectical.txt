@@ -1,0 +1,48 @@
+1. How will you tackle the challenge above?
+
+Answer:
+Step1: Use FileReader to open the CSV file
+Step2: Create a BufferedReader and read the file line by line until an "End of File" (EOF) character is reached
+Step3: Use the String.split() method to identify the comma delimiter and split the row into fields
+
+String csv = " A1: 5, A2: 7, A3: 9, B1: 3, B2: 8, B3: =4+5, C1: =5+A1, C2: =A2+B2, C3: =C2+B3 ";
+
+      // read the data from the csv string
+      String[] data = csv.split(",");
+
+      // create a 2D array to hold the data
+      String[][] table = new String[data.length][data.length];
+
+      // fill the 2D array with the data
+      for (int i = 0; i < data.length; i++) {
+         table[i] = data[i].split(":");
+      }
+
+      //remove = from the table
+      for (int i = 0; i < table.length; i++) {
+         for (int j = 0; j < table[i].length; j++) {
+            if (table[i][j].contains("=")) {
+               table[i][j] = table[i][j].replace("=", "");
+            }
+         }
+      }
+
+      //print the table
+      for (int i = 0; i < table.length; i++) {
+         for (int j = 0; j < table[i].length; j++) {
+            System.out.print(table[i][j] + " ");
+         }
+         System.out.println();
+      }
+
+2. What type of errors you would you check for?
+
+Answer:
+-> FileNotFoundException
+-> IOException
+
+3. How might a user break your code?
+
+Answer:
+-> It can be open in excel and save data into .xlsx format.
+

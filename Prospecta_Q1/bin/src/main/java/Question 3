@@ -1,0 +1,13 @@
+Question: what are the key things you would consider when creating/consuming an API to ensure
+          that it is secure and reliable?
+          
+Answer: 
+		Key Things would Consider:
+		-> Prioritize Security
+		-> Use Strong Authentication and Authorization Solution 
+			like use of Spring Security with Token based
+		-> Encrypt Traffic using TLS
+		-> Validate input
+		-> Use rate Limiting
+		-> Don't expose more data than necessary.
+          
